@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="495" height="438" preserveAspectRatio="xMinYMin meet" viewBox="0 0 495 438" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="495" height="438"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-438)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="60" y="372" width="375" height="58" rx="6" ry="6" style="stroke: rgb(8%,24%,34%); stroke-linecap: butt; stroke-width: 1; fill: rgb(92%,95%,97%); fill-rule: evenodd;"/>
+			<text x="136.905" y="413" style="font-family: Helvetica-Bold; font-size: 10px;fill: rgb(8%,24%,34%); stroke:none;" transform="translate(0,826) scale(1,-1)">1. Prepare and freeze the synthetic benchmark</text>
+			<text x="132.46525" y="398" style="font-family: Helvetica; font-size: 8.5px;fill: rgb(8%,24%,34%); stroke:none;" transform="translate(0,796) scale(1,-1)">192 states / five fields / template-derived, AI-reviewed targets</text>
+			<text x="144.50549999999998" y="386" style="font-family: Helvetica; font-size: 8.5px;fill: rgb(8%,24%,34%); stroke:none;" transform="translate(0,772) scale(1,-1)">Preserve provenance and canonical dataset fingerprint</text>
+			<path d="M 247.5,372 L 247.5,350 Z" style="stroke: rgb(8%,24%,34%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="247.5 350, 244.5 356, 250.5 356" style="stroke: rgb(8%,24%,34%); stroke-linecap: butt; stroke-width: 1; fill: rgb(8%,24%,34%); fill-rule: evenodd;"/>
+			<rect x="60" y="290" width="375" height="60" rx="6" ry="6" style="stroke: rgb(8%,24%,34%); stroke-linecap: butt; stroke-width: 1; fill: rgb(92%,95%,97%); fill-rule: evenodd;"/>
+			<text x="136.89999999999998" y="333" style="font-family: Helvetica-Bold; font-size: 10px;fill: rgb(8%,24%,34%); stroke:none;" transform="translate(0,666) scale(1,-1)">2. Split by Location/NPC pair - seeds 42, 43, 44</text>
+			<text x="169.538" y="318" style="font-family: Helvetica; font-size: 8.5px;fill: rgb(8%,24%,34%); stroke:none;" transform="translate(0,636) scale(1,-1)">144 train / 24 validation / 24 test per seed</text>
+			<text x="143.09025" y="306" style="font-family: Helvetica; font-size: 8.5px;fill: rgb(8%,24%,34%); stroke:none;" transform="translate(0,612) scale(1,-1)">All field values seen in training; pairs kept in one subset</text>
+			<path d="M 247.5,290 L 247.5,279 Z" style="stroke: rgb(8%,24%,34%); stroke-linecap: butt; stroke-width: 1;"/>
+			<path d="M 117,279 L 378,279 Z" style="stroke: rgb(8%,24%,34%); stroke-linecap: butt; stroke-width: 1;"/>
+			<path d="M 117,279 L 117,264 Z" style="stroke: rgb(8%,24%,34%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="117 264, 114 270, 120 270" style="stroke: rgb(8%,24%,34%); stroke-linecap: butt; stroke-width: 1; fill: rgb(8%,24%,34%); fill-rule: evenodd;"/>
+			<path d="M 378,279 L 378,264 Z" style="stroke: rgb(8%,24%,34%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="378 264, 375 270, 381 270" style="stroke: rgb(8%,24%,34%); stroke-linecap: butt; stroke-width: 1; fill: rgb(8%,24%,34%); fill-rule: evenodd;"/>
+			<rect x="0" y="184" width="234" height="80" rx="6" ry="6" style="stroke: rgb(8%,24%,34%); stroke-linecap: butt; stroke-width: 1; fill: rgb(92%,95%,97%); fill-rule: evenodd;"/>
+			<text x="33.095" y="247" style="font-family: Helvetica-Bold; font-size: 10px;fill: rgb(8%,24%,34%); stroke:none;" transform="translate(0,494) scale(1,-1)">3a. Train four model configurations</text>
+			<text x="29.849500000000006" y="232" style="font-family: Helvetica; font-size: 8.5px;fill: rgb(8%,24%,34%); stroke:none;" transform="translate(0,464) scale(1,-1)">char-output / char-full / words-flat / words-slots</text>
+			<text x="51.09525000000001" y="220" style="font-family: Helvetica; font-size: 8.5px;fill: rgb(8%,24%,34%); stroke:none;" transform="translate(0,440) scale(1,-1)">Fit vocabulary on training data only</text>
+			<text x="30.542249999999996" y="208" style="font-family: Helvetica; font-size: 8.5px;fill: rgb(8%,24%,34%); stroke:none;" transform="translate(0,416) scale(1,-1)">Select checkpoints using validation event NLL</text>
+			<text x="22.518249999999995" y="196" style="font-family: Helvetica; font-size: 8.5px;fill: rgb(8%,24%,34%); stroke:none;" transform="translate(0,392) scale(1,-1)">Finish all training before multi-seed test evaluation</text>
+			<rect x="261" y="184" width="234" height="80" rx="6" ry="6" style="stroke: rgb(8%,24%,34%); stroke-linecap: butt; stroke-width: 1; fill: rgb(92%,95%,97%); fill-rule: evenodd;"/>
+			<text x="305.75" y="247" style="font-family: Helvetica-Bold; font-size: 10px;fill: rgb(8%,24%,34%); stroke:none;" transform="translate(0,494) scale(1,-1)">3b. Build the retrieval baseline</text>
+			<text x="300.52675" y="232" style="font-family: Helvetica; font-size: 8.5px;fill: rgb(8%,24%,34%); stroke:none;" transform="translate(0,464) scale(1,-1)">Retrieve events from training targets only</text>
+			<text x="324.61575" y="220" style="font-family: Helvetica; font-size: 8.5px;fill: rgb(8%,24%,34%); stroke:none;" transform="translate(0,440) scale(1,-1)">Use matching split and seed</text>
+			<text x="302.65175" y="208" style="font-family: Helvetica; font-size: 8.5px;fill: rgb(8%,24%,34%); stroke:none;" transform="translate(0,416) scale(1,-1)">No model training or validation selection</text>
+			<text x="299.80425" y="196" style="font-family: Helvetica; font-size: 8.5px;fill: rgb(8%,24%,34%); stroke:none;" transform="translate(0,392) scale(1,-1)">Evaluate on the same held-out test states</text>
+			<path d="M 117,184 L 117,171 Z" style="stroke: rgb(8%,24%,34%); stroke-linecap: butt; stroke-width: 1;"/>
+			<path d="M 378,184 L 378,171 Z" style="stroke: rgb(8%,24%,34%); stroke-linecap: butt; stroke-width: 1;"/>
+			<path d="M 117,171 L 378,171 Z" style="stroke: rgb(8%,24%,34%); stroke-linecap: butt; stroke-width: 1;"/>
+			<path d="M 247.5,171 L 247.5,158 Z" style="stroke: rgb(8%,24%,34%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="247.5 158, 244.5 164, 250.5 164" style="stroke: rgb(8%,24%,34%); stroke-linecap: butt; stroke-width: 1; fill: rgb(8%,24%,34%); fill-rule: evenodd;"/>
+			<rect x="60" y="96" width="375" height="62" rx="6" ry="6" style="stroke: rgb(8%,24%,34%); stroke-linecap: butt; stroke-width: 1; fill: rgb(92%,95%,97%); fill-rule: evenodd;"/>
+			<text x="143.85" y="141" style="font-family: Helvetica-Bold; font-size: 10px;fill: rgb(8%,24%,34%); stroke:none;" transform="translate(0,282) scale(1,-1)">4. Evaluate and retain evidence - completed</text>
+			<text x="136.7195" y="126" style="font-family: Helvetica; font-size: 8.5px;fill: rgb(8%,24%,34%); stroke:none;" transform="translate(0,252) scale(1,-1)">Overlap F1 / explicit state markers / shuffled-state NLL gap</text>
+			<text x="141.21175" y="114" style="font-family: Helvetica; font-size: 8.5px;fill: rgb(8%,24%,34%); stroke:none;" transform="translate(0,228) scale(1,-1)">Report all seeds, sample SD, predictions, and limitations</text>
+			<path d="M 247.5,96 L 247.5,73 Z" style="stroke: rgb(8%,24%,34%); stroke-linecap: butt; stroke-width: 1; stroke-dasharray: 4, 3;"/>
+			<polygon points="247.5 73, 244.5 79, 250.5 79" style="stroke: rgb(8%,24%,34%); stroke-linecap: butt; stroke-width: 1; fill: rgb(8%,24%,34%); fill-rule: evenodd;"/>
+			<rect x="60" y="8" width="375" height="65" rx="6" ry="6" style="stroke: rgb(67%,45%,11%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,96%,90%); fill-rule: evenodd; stroke-dasharray: 4, 3;"/>
+			<text x="145.815" y="56" style="font-family: Helvetica-Bold; font-size: 10px;fill: rgb(67%,45%,11%); stroke:none;" transform="translate(0,112) scale(1,-1)">5. Independent human validation - pending</text>
+			<text x="146.15875" y="41" style="font-family: Helvetica; font-size: 8.5px;fill: rgb(8%,24%,34%); stroke:none;" transform="translate(0,82) scale(1,-1)">New human references: 24 predefined seed-42 states</text>
+			<text x="130.0895" y="29" style="font-family: Helvetica; font-size: 8.5px;fill: rgb(8%,24%,34%); stroke:none;" transform="translate(0,58) scale(1,-1)">Two independent raters: 360 outputs each; no scores supplied</text>
+		</g>
+	</g>
+</svg>

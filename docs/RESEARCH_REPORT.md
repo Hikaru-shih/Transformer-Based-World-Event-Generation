@@ -27,6 +27,12 @@ The completed study addresses three questions:
 
 The character output-only versus full-sequence comparison additionally examines training objectives. The earlier original-data random/compositional experiment matrix remains a separate unfinished extension; it is not required for the narrower synthetic study reported here.
 
+### Research Workflow
+
+![Research workflow](figures/research_workflow.svg)
+
+**Figure 1. Research workflow.** Solid stages represent the completed synthetic study. The dashed final stage represents prepared but uncompleted human validation. Training vocabularies and retrieval targets use training data only; checkpoints are selected on validation data. Shared templates and previously inspected test results remain limitations of this exploratory benchmark.
+
 ## 2. Related Work and Positioning
 
 The Transformer provides attention-based sequence modeling and encoder-decoder attention, which underlies the conditional decoder used here. The project implements small models using standard PyTorch components and does not introduce a new attention architecture. [Vaswani et al., *Attention Is All You Need*, 2017](https://arxiv.org/abs/1706.03762).
