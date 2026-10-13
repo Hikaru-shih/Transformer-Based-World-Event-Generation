@@ -1,0 +1,45 @@
+{
+  "examples": 192,
+  "human_reviewed_examples": 0,
+  "ai_reviewed_examples": 192,
+  "data_sha256": "a88767802aa5e7df2393b837c3a27558a07a7a5e674873f0210e572c00d76ef8",
+  "review_kind": "ai",
+  "source": "rule_template_ai_reviewed",
+  "unique_outputs": 192,
+  "max_sequence_tokens": 214,
+  "seed42_coverage": {
+    "validation": {
+      "examples": 24,
+      "unseen_values": {
+        "Location": [],
+        "Time": [],
+        "Player": [],
+        "NPC": [],
+        "Weather": []
+      },
+      "examples_with_unseen_values": 0,
+      "location_npc_pairs_shared_with_train": 0,
+      "unseen_input_characters": [],
+      "unseen_output_characters": []
+    },
+    "test": {
+      "examples": 24,
+      "unseen_values": {
+        "Location": [],
+        "Time": [],
+        "Player": [],
+        "NPC": [],
+        "Weather": []
+      },
+      "examples_with_unseen_values": 0,
+      "location_npc_pairs_shared_with_train": 0,
+      "unseen_input_characters": [],
+      "unseen_output_characters": []
+    }
+  },
+  "limitations": [
+    "Shared rule templates across subsets",
+    "No independent human review",
+    "Not evidence of open-ended narrative creativity"
+  ]
+}

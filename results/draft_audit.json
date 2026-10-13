@@ -1,0 +1,11 @@
+﻿{
+    "total_rows":  192,
+    "draft_rows":  192,
+    "unique_drafts":  192,
+    "final_outputs":  0,
+    "reviewed_rows":  0,
+    "max_draft_characters":  107,
+    "max_sequence_tokens":  194,
+    "source":  "rule_template_v1",
+    "status":  "Draft suggestions only; human review pending."
+}

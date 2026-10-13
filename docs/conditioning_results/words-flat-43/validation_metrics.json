@@ -1,0 +1,39 @@
+{
+  "phase": "validation",
+  "seed": 43,
+  "conditioning": "flat",
+  "data_sha256": "a88767802aa5e7df2393b837c3a27558a07a7a5e674873f0210e572c00d76ef8",
+  "examples": 24,
+  "parameters": 160755,
+  "metrics": {
+    "retrieval": {
+      "token_overlap_f1": 0.7239771998067194,
+      "exact_match": 0.0,
+      "training_copy_rate": 1.0,
+      "empty_rate": 0.0,
+      "distinct_2": 0.20217391304347826,
+      "mean_words": 20.166666666666668,
+      "npc_explicit_accuracy": 1.0,
+      "player_explicit_accuracy": 1.0,
+      "location_context_marker_accuracy": 0.0,
+      "time_context_marker_accuracy": 1.0,
+      "weather_context_marker_accuracy": 1.0
+    },
+    "word_transformer": {
+      "token_overlap_f1": 0.8890350877192983,
+      "exact_match": 0.4583333333333333,
+      "training_copy_rate": 0.0,
+      "empty_rate": 0.0,
+      "distinct_2": 0.19527896995708155,
+      "mean_words": 20.416666666666668,
+      "npc_explicit_accuracy": 1.0,
+      "player_explicit_accuracy": 1.0,
+      "location_context_marker_accuracy": 1.0,
+      "time_context_marker_accuracy": 1.0,
+      "weather_context_marker_accuracy": 1.0
+    }
+  },
+  "word_nll": 0.10585389102714649,
+  "shuffled_word_nll": 1.1764877429906873,
+  "conditioning_nll_gap": 1.0706338519635408
+}

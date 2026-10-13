@@ -1,0 +1,551 @@
+{
+  "plan": {
+    "dataset_sha256": "a88767802aa5e7df2393b837c3a27558a07a7a5e674873f0210e572c00d76ef8",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "methods": [
+      "char-output",
+      "char-full",
+      "words-flat",
+      "words-slots"
+    ],
+    "split": "compositional_seen",
+    "epochs": 100,
+    "patience": 15,
+    "lr": 0.0003,
+    "greedy_decoding": true,
+    "word_config": {
+      "emb": 64,
+      "depth": 2,
+      "block_size": 96
+    },
+    "char_config": {
+      "emb": 128,
+      "depth": 2,
+      "block_size": 256
+    },
+    "limitation": "Previously inspected synthetic benchmark; not a pristine human-authored final test.",
+    "primary_metrics": [
+      "npc_explicit_accuracy",
+      "player_explicit_accuracy",
+      "token_overlap_f1"
+    ]
+  },
+  "runs": [
+    {
+      "method": "char-output",
+      "seed": 42,
+      "metrics": {
+        "token_overlap_f1": 0.299457903214583,
+        "exact_match": 0.0,
+        "training_copy_rate": 0.0,
+        "empty_rate": 0.0,
+        "distinct_2": 0.6954732510288066,
+        "mean_words": 21.25,
+        "npc_explicit_accuracy": 0.0,
+        "player_explicit_accuracy": 0.08333333333333333,
+        "location_context_marker_accuracy": 0.4583333333333333,
+        "time_context_marker_accuracy": 0.08333333333333333,
+        "weather_context_marker_accuracy": 0.08333333333333333
+      },
+      "parameters": 1230381,
+      "conditioning_nll_gap": -0.09657624038662305
+    },
+    {
+      "method": "retrieval",
+      "seed": 42,
+      "metrics": {
+        "token_overlap_f1": 0.8180345215051683,
+        "exact_match": 0.0,
+        "training_copy_rate": 1.0,
+        "empty_rate": 0.0,
+        "distinct_2": 0.2108695652173913,
+        "mean_words": 20.166666666666668,
+        "npc_explicit_accuracy": 0.5,
+        "player_explicit_accuracy": 1.0,
+        "location_context_marker_accuracy": 0.5,
+        "time_context_marker_accuracy": 1.0,
+        "weather_context_marker_accuracy": 1.0
+      }
+    },
+    {
+      "method": "char-output",
+      "seed": 43,
+      "metrics": {
+        "token_overlap_f1": 0.46792943394449843,
+        "exact_match": 0.0,
+        "training_copy_rate": 0.0,
+        "empty_rate": 0.0,
+        "distinct_2": 0.4489311163895487,
+        "mean_words": 18.541666666666668,
+        "npc_explicit_accuracy": 0.0,
+        "player_explicit_accuracy": 0.08333333333333333,
+        "location_context_marker_accuracy": 0.7916666666666666,
+        "time_context_marker_accuracy": 0.4583333333333333,
+        "weather_context_marker_accuracy": 0.3333333333333333
+      },
+      "parameters": 1230381,
+      "conditioning_nll_gap": -0.32713081336673655
+    },
+    {
+      "method": "retrieval",
+      "seed": 43,
+      "metrics": {
+        "token_overlap_f1": 0.6709101787929742,
+        "exact_match": 0.0,
+        "training_copy_rate": 1.0,
+        "empty_rate": 0.0,
+        "distinct_2": 0.20217391304347826,
+        "mean_words": 20.166666666666668,
+        "npc_explicit_accuracy": 1.0,
+        "player_explicit_accuracy": 1.0,
+        "location_context_marker_accuracy": 0.0,
+        "time_context_marker_accuracy": 1.0,
+        "weather_context_marker_accuracy": 1.0
+      }
+    },
+    {
+      "method": "char-output",
+      "seed": 44,
+      "metrics": {
+        "token_overlap_f1": 0.5228914841805793,
+        "exact_match": 0.0,
+        "training_copy_rate": 0.0,
+        "empty_rate": 0.0,
+        "distinct_2": 0.5587044534412956,
+        "mean_words": 21.583333333333332,
+        "npc_explicit_accuracy": 0.0,
+        "player_explicit_accuracy": 0.08333333333333333,
+        "location_context_marker_accuracy": 0.875,
+        "time_context_marker_accuracy": 0.7916666666666666,
+        "weather_context_marker_accuracy": 0.4166666666666667
+      },
+      "parameters": 1230381,
+      "conditioning_nll_gap": 0.18092451740924576
+    },
+    {
+      "method": "retrieval",
+      "seed": 44,
+      "metrics": {
+        "token_overlap_f1": 0.6955159704818256,
+        "exact_match": 0.0,
+        "training_copy_rate": 1.0,
+        "empty_rate": 0.0,
+        "distinct_2": 0.11403508771929824,
+        "mean_words": 20.0,
+        "npc_explicit_accuracy": 0.5,
+        "player_explicit_accuracy": 1.0,
+        "location_context_marker_accuracy": 0.5,
+        "time_context_marker_accuracy": 1.0,
+        "weather_context_marker_accuracy": 1.0
+      }
+    },
+    {
+      "method": "char-full",
+      "seed": 42,
+      "metrics": {
+        "token_overlap_f1": 0.36502072837367633,
+        "exact_match": 0.0,
+        "training_copy_rate": 0.0,
+        "empty_rate": 0.0,
+        "distinct_2": 0.6953781512605042,
+        "mean_words": 20.833333333333332,
+        "npc_explicit_accuracy": 0.0,
+        "player_explicit_accuracy": 0.041666666666666664,
+        "location_context_marker_accuracy": 0.3333333333333333,
+        "time_context_marker_accuracy": 0.4166666666666667,
+        "weather_context_marker_accuracy": 0.125
+      },
+      "parameters": 1230381,
+      "conditioning_nll_gap": -0.07743100263316638
+    },
+    {
+      "method": "char-full",
+      "seed": 43,
+      "metrics": {
+        "token_overlap_f1": 0.398365154280796,
+        "exact_match": 0.0,
+        "training_copy_rate": 0.0,
+        "empty_rate": 0.0,
+        "distinct_2": 0.47902869757174393,
+        "mean_words": 19.875,
+        "npc_explicit_accuracy": 0.0,
+        "player_explicit_accuracy": 0.0,
+        "location_context_marker_accuracy": 0.5833333333333334,
+        "time_context_marker_accuracy": 0.25,
+        "weather_context_marker_accuracy": 0.25
+      },
+      "parameters": 1230381,
+      "conditioning_nll_gap": -0.3852031672979197
+    },
+    {
+      "method": "char-full",
+      "seed": 44,
+      "metrics": {
+        "token_overlap_f1": 0.6036308121746743,
+        "exact_match": 0.0,
+        "training_copy_rate": 0.0,
+        "empty_rate": 0.0,
+        "distinct_2": 0.4595744680851064,
+        "mean_words": 20.583333333333332,
+        "npc_explicit_accuracy": 0.0,
+        "player_explicit_accuracy": 0.20833333333333334,
+        "location_context_marker_accuracy": 1.0,
+        "time_context_marker_accuracy": 0.9166666666666666,
+        "weather_context_marker_accuracy": 0.75
+      },
+      "parameters": 1230381,
+      "conditioning_nll_gap": 0.24883867995183273
+    },
+    {
+      "method": "words-flat",
+      "seed": 42,
+      "metrics": {
+        "token_overlap_f1": 0.9190126593552099,
+        "exact_match": 0.5416666666666666,
+        "training_copy_rate": 0.0,
+        "empty_rate": 0.0,
+        "distinct_2": 0.18181818181818182,
+        "mean_words": 19.791666666666668,
+        "npc_explicit_accuracy": 1.0,
+        "player_explicit_accuracy": 1.0,
+        "location_context_marker_accuracy": 1.0,
+        "time_context_marker_accuracy": 1.0,
+        "weather_context_marker_accuracy": 1.0
+      },
+      "parameters": 160755,
+      "conditioning_nll_gap": 1.1244967754888713
+    },
+    {
+      "method": "words-flat",
+      "seed": 43,
+      "metrics": {
+        "token_overlap_f1": 0.8918205454162806,
+        "exact_match": 0.4166666666666667,
+        "training_copy_rate": 0.0,
+        "empty_rate": 0.0,
+        "distinct_2": 0.21478060046189376,
+        "mean_words": 19.041666666666668,
+        "npc_explicit_accuracy": 1.0,
+        "player_explicit_accuracy": 0.9583333333333334,
+        "location_context_marker_accuracy": 1.0,
+        "time_context_marker_accuracy": 1.0,
+        "weather_context_marker_accuracy": 1.0
+      },
+      "parameters": 160755,
+      "conditioning_nll_gap": 0.8946912076838301
+    },
+    {
+      "method": "words-flat",
+      "seed": 44,
+      "metrics": {
+        "token_overlap_f1": 0.901564345096415,
+        "exact_match": 0.5,
+        "training_copy_rate": 0.0,
+        "empty_rate": 0.0,
+        "distinct_2": 0.16,
+        "mean_words": 19.75,
+        "npc_explicit_accuracy": 1.0,
+        "player_explicit_accuracy": 1.0,
+        "location_context_marker_accuracy": 1.0,
+        "time_context_marker_accuracy": 1.0,
+        "weather_context_marker_accuracy": 1.0
+      },
+      "parameters": 160755,
+      "conditioning_nll_gap": 1.1785821914672852
+    },
+    {
+      "method": "words-slots",
+      "seed": 42,
+      "metrics": {
+        "token_overlap_f1": 0.900647464671855,
+        "exact_match": 0.4583333333333333,
+        "training_copy_rate": 0.0,
+        "empty_rate": 0.0,
+        "distinct_2": 0.19463087248322147,
+        "mean_words": 19.625,
+        "npc_explicit_accuracy": 1.0,
+        "player_explicit_accuracy": 1.0,
+        "location_context_marker_accuracy": 1.0,
+        "time_context_marker_accuracy": 1.0,
+        "weather_context_marker_accuracy": 1.0
+      },
+      "parameters": 160755,
+      "conditioning_nll_gap": 1.2576630567529388
+    },
+    {
+      "method": "words-slots",
+      "seed": 43,
+      "metrics": {
+        "token_overlap_f1": 0.867273568339816,
+        "exact_match": 0.25,
+        "training_copy_rate": 0.0,
+        "empty_rate": 0.0,
+        "distinct_2": 0.18620689655172415,
+        "mean_words": 19.125,
+        "npc_explicit_accuracy": 1.0,
+        "player_explicit_accuracy": 1.0,
+        "location_context_marker_accuracy": 1.0,
+        "time_context_marker_accuracy": 1.0,
+        "weather_context_marker_accuracy": 1.0
+      },
+      "parameters": 160755,
+      "conditioning_nll_gap": 0.9952897178202812
+    },
+    {
+      "method": "words-slots",
+      "seed": 44,
+      "metrics": {
+        "token_overlap_f1": 0.9145972908328491,
+        "exact_match": 0.5833333333333334,
+        "training_copy_rate": 0.0,
+        "empty_rate": 0.0,
+        "distinct_2": 0.14965986394557823,
+        "mean_words": 19.375,
+        "npc_explicit_accuracy": 1.0,
+        "player_explicit_accuracy": 1.0,
+        "location_context_marker_accuracy": 1.0,
+        "time_context_marker_accuracy": 1.0,
+        "weather_context_marker_accuracy": 1.0
+      },
+      "parameters": 160755,
+      "conditioning_nll_gap": 1.236737031475762
+    }
+  ],
+  "summary": {
+    "char-output": {
+      "token_overlap_f1": {
+        "mean": 0.43009294044655355,
+        "sd": 0.1164231139249725
+      },
+      "exact_match": {
+        "mean": 0.0,
+        "sd": 0.0
+      },
+      "training_copy_rate": {
+        "mean": 0.0,
+        "sd": 0.0
+      },
+      "empty_rate": {
+        "mean": 0.0,
+        "sd": 0.0
+      },
+      "distinct_2": {
+        "mean": 0.5677029402865503,
+        "sd": 0.12351714703735941
+      },
+      "mean_words": {
+        "mean": 20.458333333333332,
+        "sd": 1.6682284349306324
+      },
+      "npc_explicit_accuracy": {
+        "mean": 0.0,
+        "sd": 0.0
+      },
+      "player_explicit_accuracy": {
+        "mean": 0.08333333333333333,
+        "sd": 0.0
+      },
+      "location_context_marker_accuracy": {
+        "mean": 0.7083333333333333,
+        "sd": 0.22047927592204922
+      },
+      "time_context_marker_accuracy": {
+        "mean": 0.4444444444444444,
+        "sd": 0.35437085617147424
+      },
+      "weather_context_marker_accuracy": {
+        "mean": 0.2777777777777778,
+        "sd": 0.17347216662217774
+      }
+    },
+    "char-full": {
+      "token_overlap_f1": {
+        "mean": 0.45567223160971554,
+        "sd": 0.12921597756031136
+      },
+      "exact_match": {
+        "mean": 0.0,
+        "sd": 0.0
+      },
+      "training_copy_rate": {
+        "mean": 0.0,
+        "sd": 0.0
+      },
+      "empty_rate": {
+        "mean": 0.0,
+        "sd": 0.0
+      },
+      "distinct_2": {
+        "mean": 0.5446604389724515,
+        "sd": 0.13088731168160594
+      },
+      "mean_words": {
+        "mean": 20.430555555555554,
+        "sd": 0.4970980602270349
+      },
+      "npc_explicit_accuracy": {
+        "mean": 0.0,
+        "sd": 0.0
+      },
+      "player_explicit_accuracy": {
+        "mean": 0.08333333333333334,
+        "sd": 0.11023963796102462
+      },
+      "location_context_marker_accuracy": {
+        "mean": 0.6388888888888888,
+        "sd": 0.3367876570272817
+      },
+      "time_context_marker_accuracy": {
+        "mean": 0.5277777777777778,
+        "sd": 0.3469443332443554
+      },
+      "weather_context_marker_accuracy": {
+        "mean": 0.375,
+        "sd": 0.33071891388307384
+      }
+    },
+    "words-flat": {
+      "token_overlap_f1": {
+        "mean": 0.9041325166226352,
+        "sd": 0.01377677008075529
+      },
+      "exact_match": {
+        "mean": 0.4861111111111111,
+        "sd": 0.06364688465216442
+      },
+      "training_copy_rate": {
+        "mean": 0.0,
+        "sd": 0.0
+      },
+      "empty_rate": {
+        "mean": 0.0,
+        "sd": 0.0
+      },
+      "distinct_2": {
+        "mean": 0.18553292742669186,
+        "sd": 0.027578579512791572
+      },
+      "mean_words": {
+        "mean": 19.52777777777778,
+        "sd": 0.42149974737481966
+      },
+      "npc_explicit_accuracy": {
+        "mean": 1.0,
+        "sd": 0.0
+      },
+      "player_explicit_accuracy": {
+        "mean": 0.9861111111111112,
+        "sd": 0.024056261216234387
+      },
+      "location_context_marker_accuracy": {
+        "mean": 1.0,
+        "sd": 0.0
+      },
+      "time_context_marker_accuracy": {
+        "mean": 1.0,
+        "sd": 0.0
+      },
+      "weather_context_marker_accuracy": {
+        "mean": 1.0,
+        "sd": 0.0
+      }
+    },
+    "words-slots": {
+      "token_overlap_f1": {
+        "mean": 0.89417277461484,
+        "sd": 0.024317172659464543
+      },
+      "exact_match": {
+        "mean": 0.4305555555555556,
+        "sd": 0.16839382851364085
+      },
+      "training_copy_rate": {
+        "mean": 0.0,
+        "sd": 0.0
+      },
+      "empty_rate": {
+        "mean": 0.0,
+        "sd": 0.0
+      },
+      "distinct_2": {
+        "mean": 0.17683254432684128,
+        "sd": 0.023906207602844915
+      },
+      "mean_words": {
+        "mean": 19.375,
+        "sd": 0.25
+      },
+      "npc_explicit_accuracy": {
+        "mean": 1.0,
+        "sd": 0.0
+      },
+      "player_explicit_accuracy": {
+        "mean": 1.0,
+        "sd": 0.0
+      },
+      "location_context_marker_accuracy": {
+        "mean": 1.0,
+        "sd": 0.0
+      },
+      "time_context_marker_accuracy": {
+        "mean": 1.0,
+        "sd": 0.0
+      },
+      "weather_context_marker_accuracy": {
+        "mean": 1.0,
+        "sd": 0.0
+      }
+    },
+    "retrieval": {
+      "token_overlap_f1": {
+        "mean": 0.7281535569266561,
+        "sd": 0.0788054699328138
+      },
+      "exact_match": {
+        "mean": 0.0,
+        "sd": 0.0
+      },
+      "training_copy_rate": {
+        "mean": 1.0,
+        "sd": 0.0
+      },
+      "empty_rate": {
+        "mean": 0.0,
+        "sd": 0.0
+      },
+      "distinct_2": {
+        "mean": 0.1756928553267226,
+        "sd": 0.05357390989493656
+      },
+      "mean_words": {
+        "mean": 20.11111111111111,
+        "sd": 0.09622504486493831
+      },
+      "npc_explicit_accuracy": {
+        "mean": 0.6666666666666666,
+        "sd": 0.28867513459481287
+      },
+      "player_explicit_accuracy": {
+        "mean": 1.0,
+        "sd": 0.0
+      },
+      "location_context_marker_accuracy": {
+        "mean": 0.3333333333333333,
+        "sd": 0.28867513459481287
+      },
+      "time_context_marker_accuracy": {
+        "mean": 1.0,
+        "sd": 0.0
+      },
+      "weather_context_marker_accuracy": {
+        "mean": 1.0,
+        "sd": 0.0
+      }
+    }
+  },
+  "notes": "NLL units differ across character/word models; do not compare NLL gaps across tokenizers."
+}

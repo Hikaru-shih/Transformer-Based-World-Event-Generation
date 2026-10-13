@@ -1,0 +1,7 @@
+{
+  "S01": "char-full",
+  "S02": "words-flat",
+  "S03": "retrieval",
+  "S04": "char-output",
+  "S05": "words-slots"
+}

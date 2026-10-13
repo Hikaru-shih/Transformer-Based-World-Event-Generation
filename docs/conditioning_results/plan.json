@@ -1,0 +1,35 @@
+{
+  "dataset_sha256": "a88767802aa5e7df2393b837c3a27558a07a7a5e674873f0210e572c00d76ef8",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "methods": [
+    "char-output",
+    "char-full",
+    "words-flat",
+    "words-slots"
+  ],
+  "split": "compositional_seen",
+  "epochs": 100,
+  "patience": 15,
+  "lr": 0.0003,
+  "greedy_decoding": true,
+  "word_config": {
+    "emb": 64,
+    "depth": 2,
+    "block_size": 96
+  },
+  "char_config": {
+    "emb": 128,
+    "depth": 2,
+    "block_size": 256
+  },
+  "limitation": "Previously inspected synthetic benchmark; not a pristine human-authored final test.",
+  "primary_metrics": [
+    "npc_explicit_accuracy",
+    "player_explicit_accuracy",
+    "token_overlap_f1"
+  ]
+}

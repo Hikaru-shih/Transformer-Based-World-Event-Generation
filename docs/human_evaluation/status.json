@@ -1,0 +1,9 @@
+{
+  "status": "awaiting_human_ratings",
+  "expected_per_reviewer": 360,
+  "completed_a": 0,
+  "completed_b": 0,
+  "paired_items": 0,
+  "systems": {},
+  "limitation": "Descriptive item averages only; repeated states and seeds are not independent samples. No significance or semantic claims are inferred."
+}

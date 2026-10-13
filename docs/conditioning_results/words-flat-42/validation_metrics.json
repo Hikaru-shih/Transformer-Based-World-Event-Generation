@@ -1,0 +1,33 @@
+{
+  "phase": "validation",
+  "seed": 42,
+  "conditioning": "flat",
+  "data_sha256": "a88767802aa5e7df2393b837c3a27558a07a7a5e674873f0210e572c00d76ef8",
+  "examples": 24,
+  "parameters": 160755,
+  "metrics": {
+    "retrieval": {
+      "token_overlap_f1": 0.7680857456242194,
+      "exact_match": 0.0,
+      "training_copy_rate": 1.0,
+      "empty_rate": 0.0,
+      "distinct_2": 0.12931034482758622,
+      "mean_words": 20.333333333333332,
+      "npc_explicit_accuracy": 0.0,
+      "player_explicit_accuracy": 1.0
+    },
+    "word_transformer": {
+      "token_overlap_f1": 0.9170855041763258,
+      "exact_match": 0.5833333333333334,
+      "training_copy_rate": 0.0,
+      "empty_rate": 0.0,
+      "distinct_2": 0.1511879049676026,
+      "mean_words": 20.291666666666668,
+      "npc_explicit_accuracy": 1.0,
+      "player_explicit_accuracy": 1.0
+    }
+  },
+  "word_nll": 0.0776903568614613,
+  "shuffled_word_nll": 1.0712048894708808,
+  "conditioning_nll_gap": 0.9935145326094195
+}
