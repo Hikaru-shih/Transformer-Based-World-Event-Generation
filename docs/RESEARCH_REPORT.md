@@ -2,14 +2,11 @@
 
 **A controlled study of retrieval, character-prefix models, and word-level conditional Transformers**
 
-Author: Pin Guang Shih, National Yang Ming Chiao Tung University  
-Original course-project research date: November 30, 2025
+Pin Guang Shih
 
-Extended experiments and report update: October 2026 (report updated October 13, 2026)
+National Yang Ming Chiao Tung University
 
-Status: completed exploratory synthetic study; independent human validation pending
-
-The original research date refers to the course project. The additional benchmark, multi-seed comparisons, and validation workflows reported here were developed in October 2026.
+Advisor: Te-Sheng Lin
 
 ## Abstract
 
